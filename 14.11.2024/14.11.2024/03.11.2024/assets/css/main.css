@@ -1,0 +1,400 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #363F2F;
+    overflow-x: hidden;
+}
+
+.text-center {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.custom-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 55px;
+    margin-bottom: 20px;
+    color: white;
+    width: 60%;
+    transform: translateX(50px);
+}
+
+.photos {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.image-box img {
+    width: 100%;
+
+}
+
+#third-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.third-one {
+    border-bottom: 1px solid white;
+    width: 30%;
+    margin-top: 20px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+.line1 {
+    margin-top: 40px;
+}
+
+.fotomenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.carousel-indicators button {
+    border-radius: 80%;
+    background-color: transparent;
+    border: 1px solid #fff;
+
+}
+
+.deneme::after {
+    background-color: white;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* İndikatörler arasındaki boşluk */
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+.carousel-indicators .active {
+    background-color: white !important;
+    width: 18px !important;
+    height: 18px !important;
+    background-clip: content-box;
+    padding: 1px;
+}
+
+.carousel-indicators button:not(.active) {
+    background-color: transparent;
+
+}
+
+
+.career-container {
+    margin-top: 50px;
+}
+
+.izgara {
+    display: grid;
+    grid-template-columns: repeat(4, 25%)
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+}
+
+.last {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.fourt-container {
+
+    position: relative;
+}
+
+.navigation1 {
+    display: flex;
+
+}
+
+.navigation2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.navbar {
+    top: 0;
+    position: sticky;
+    background-color: #363F2F;
+    z-index: 100000;
+}
+
+
+.navbar::before {
+    content: "";
+    background-color: #363F2F;
+    width: 50px;
+}
+
+
+
+.carousel-item {
+    height: 500px;
+    /* Carousel'in sabit yüksekliği */
+    overflow: hidden;
+    /* Resmin taşan kısımlarını gizle */
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Resmin kırpılarak yerleştirilmesi */
+}
+
+.absolute-item p {
+    font-size: 3.2vw;
+    color: white;
+    top: 0;
+    font-family: 'Times New Roman', Times, serif;
+    align-self: center;
+}
+
+.fifth-first {
+    width: 28%;
+}
+
+.seven-sentence {
+    margin-top: 110px;
+
+}
+
+.maps {
+    margin-top: 135px;
+    float: right;
+}
+
+.absolute-item p {
+    font-size: 65px;
+}
+
+
+
+.maps {
+    width: 74%;
+}
+
+.nine-first {
+    margin-top: 195px;
+}
+
+
+@media(max-width:1440px) {
+    .image-box.first {
+        width: 280px;
+        height: 280px;
+    }
+
+
+    .image-box.second {
+        width: 480px;
+        height: 480px;
+    }
+
+    .image-box.third {
+        width: 380px;
+        height: 380px;
+    }
+}
+
+@media(min-width:1200px) and (max-widht:1440px) {
+    .nine-first {
+        width: 29%;
+    }
+}
+
+@media(max-width:1200px) {
+    .absolute-item p {
+        font-size: 55px;
+    }
+
+    .custom-text {
+        display: flex;
+        font-size: 47px;
+
+    }
+}
+
+
+@media(max-width:992px) {
+
+
+    .absolute-item p {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .absolute-item p {
+        font-size: 22px;
+    }
+
+
+
+    .custom-text {
+        font-size: 49px;
+        margin-top: 50px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .photos {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .image-box.first {
+        align-self: flex-start;
+        width: 211px;
+        height: 211px;
+
+    }
+
+
+    .image-box.second {
+        align-self: center;
+        width: 327px;
+        height: 327px;
+
+    }
+
+    .image-box.third {
+        align-self: flex-end;
+        width: 211px;
+        height: 211px;
+
+    }
+
+    .article {
+        position: absolute;
+        font-size: 96px;
+        top: 0;
+        text-align: center;
+    }
+
+
+    .row-box.title {
+        align-self: flex-start;
+        margin-top: 100px;
+    }
+
+    .row-box.line {
+        align-self: center;
+
+    }
+
+    .row-box.sentence {
+        align-self: center;
+    }
+
+    .row-box.buton {
+        align-self: center;
+    }
+
+    .career-image {
+        width: 100%;
+    }
+
+    .izgara {
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .last {
+        grid-template-columns: repeat(2, 50%);
+
+    }
+
+    .nine-first {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .fifth-first {
+        width: 100%;
+    }
+
+    .third-one {
+        border-bottom: 1px solid white;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+
+
+
+}
+
+@media(max-width:576px) {
+    .maps1 {
+        display: block;
+        width: 100%;
+    }
+
+    .foto-absolute {
+        width: 211px;
+        height: 211px;
+    }
+
+    .foto-absolute2 {
+        align-self: flex-end;
+        margin-top: 50px;
+        width: 211px;
+        height: 100px;
+    }
+
+    .absolute-item p {
+        text-align: center;
+    }
+
+    #seventh-Container.row {
+        flex-direction: column;
+
+    }
+
+    .seven-sentence {
+        margin-top: 50px;
+
+    }
+
+    .maps {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+
+
+
+
+}
